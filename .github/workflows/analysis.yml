@@ -22,7 +22,7 @@ jobs:
         languages: ${{ matrix.language }}
 
     - name: Customize queries
-      uses: zbazztian/codeql-debug@master
+      uses: zbazztian/codeql-customize@master
       with:
         language: ${{ matrix.language }}
         qll: .github/java-customizations.qll
