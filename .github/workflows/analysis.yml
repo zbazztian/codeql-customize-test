@@ -25,6 +25,7 @@ jobs:
       uses: zbazztian/codeql-debug@master
       with:
         language: ${{ matrix.language }}
+        qll: .github/java-customizations.qll
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v1
