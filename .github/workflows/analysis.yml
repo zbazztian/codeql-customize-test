@@ -21,11 +21,6 @@ jobs:
       with:
         languages: ${{ matrix.language }}
 
-    - run: |
-        cat '/home/runner/work/_temp/codeql_databases/java/working/env.tmp'
-        echo '--------------------------------------'
-        printenv
-
     - name: Customize queries
       uses: zbazztian/codeql-customize@master
       with:
